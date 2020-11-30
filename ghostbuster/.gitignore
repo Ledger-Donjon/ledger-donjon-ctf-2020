@@ -1,4 +1,4 @@
-attacker/attacker
-attacker/monitor
+exploit/exploit
+exploit/monitor
 *.o
 *.so
