@@ -1,0 +1,31 @@
+name: "Ghostbuster"
+author: "ctf@ledger.fr"
+category: Hardware / Pwn
+description: |
+    This program is proved to be bug free, there is no way to read the secret
+    file. By the way, it runs inside another container on the same machine for
+    additional security.
+
+    `ssh -i ghostbuster/network/ssh.key -p 3000 root@ghostbuster.donjon-ctf.io`
+
+    Protip: [OpenSSH connection sharing](https://stackoverflow.com/a/20410383)
+    for `scp` and multiple shells.
+value: 500
+type: standard
+
+flags:
+    - CTF{W0W!SUCH!ZUUL!0987478929304}
+
+files:
+    - docker-compose.yml
+    - ghostbuster/Makefile
+    - ghostbuster/Dockerfile
+    - ghostbuster/libcheck.h
+    - ghostbuster/libcheck.c
+    - ghostbuster/libcheck.so
+    - ghostbuster/ghostbuster
+    - ghostbuster/ghostbuster.c
+    - ghostbuster/network/ssh.key
+    - ghostbuster/network/ssh.key.pub
+    - ghostbuster/network/challenge.sh
+    - ghostbuster/network/ssh-isolation.py
