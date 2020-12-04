@@ -1,0 +1,24 @@
+name: "Hard Modern Cryptocomputer"
+author: "ctf@ledger.fr"
+category: Hardware / Pwn
+description: |
+    Normal users are not able to read the secret embedded in the WASM virtual machine. Can you leak it?
+    
+    You need to solve "Easy Modern Cryptocomputer" before this challenge.
+
+    `http://modern-cryptocomputer.donjon-ctf.io:30510`
+value: 500
+type: standard
+hints:
+    - 'Reminder: the blockchain does not run on an official EOSIO node, but on one which has been patched in order to introduce new features.'
+
+flags:
+    - CTF{S3cur1ty_with_C++_TeMpLaTeS_15_fragile}
+
+files:
+    - README.md
+    - container/blockchain.tar.bz2
+    - container/Dockerfile
+    - container/eos_patch.patch
+    - container/start_genesis_nodeos
+    - container/start_nodeos

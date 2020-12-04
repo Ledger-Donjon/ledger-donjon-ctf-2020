@@ -1,0 +1,20 @@
+name: "Easy Modern Cryptocomputer"
+author: "ctf@ledger.fr"
+category: Hardware / Pwn
+description: |
+    A smart contract seems to be a good place to hide a secret flag. Doesn't it?
+
+    `http://modern-cryptocomputer.donjon-ctf.io:30510`
+value: 100
+type: standard
+
+flags:
+    - CTF{04f5f3fbbc08dac23645890b03dd0d72fed6c5988621e62295610ff23a377e3b}
+
+files:
+    - README.md
+    - container/blockchain.tar.bz2
+    - container/Dockerfile
+    - container/eos_patch.patch
+    - container/start_genesis_nodeos
+    - container/start_nodeos

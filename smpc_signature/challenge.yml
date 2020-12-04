@@ -1,0 +1,21 @@
+name: "SMPC Signature"
+author: "ctf@ledger.fr"
+category: Crypto
+description: |
+    Steal the private key from a trace of SMPC operations!
+    
+    More information in `README.md`
+value: 500
+type: standard
+
+flags:
+    - CTF{weak_RNG_strikes_back_again}
+
+files:
+    - generate_split_key.py
+    - get_flag.py
+    - public_key.pem
+    - README.md
+    - sign_data.py
+    - smpc_signer.py
+    - smpc_trace.log

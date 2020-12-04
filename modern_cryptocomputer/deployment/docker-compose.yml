@@ -1,0 +1,17 @@
+version: "3.12"
+
+services:
+
+  modern_cryptocomputer:
+    build: .
+    command: ["/bin/bash", "-c", "trap 'exit 0' SIGINT SIGTERM ; while true ; do timeout 3600 /opt/installdir/bin/start_nodeos ; rm -rf /opt/eosio/blockchain ; done"]
+    networks:
+      - modern_cryptocomputer
+    ports:
+      - "30510:30510"
+    env_file:
+      - secrets.env
+
+networks:
+  modern_cryptocomputer:
+    name: modern_cryptocomputer
