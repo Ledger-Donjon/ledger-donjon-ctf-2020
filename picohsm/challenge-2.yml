@@ -1,0 +1,18 @@
+name: "picoHSM Good Times"
+author: "ctf@ledger.fr"
+category: "Hardware / Pwn"
+description: |
+    Nice job getting almost r00t on this platform, but there's still work to
+    do. Looks like usage is protected by a 8-digits PIN code.
+    
+    Can you get this code for me ?
+
+    By the way, we managed somehow to get some source code. Hope this helps.
+value: 150
+type: standard
+requirements:
+    - "picoHSM Speed Dating"
+flags:
+    - CTF{Tada!13372020}
+files:
+    - main.cxx

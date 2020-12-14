@@ -1,0 +1,16 @@
+name: "picoHSM On Steroids"
+author: "ctf@ledger.fr"
+category: "Hardware / Pwn"
+description: |
+    Ok we got the PIN, but I failed decrypting this secret message...
+    
+    Maybe the board designers made a hardware mistake we can exploit?
+value: 300
+type: standard
+requirements:
+    - "picoHSM Good Times"
+flags:
+    - CTF{t1s but a scr4tch}
+files:
+    - picohsm.pdf
+    - message.hex

@@ -1,0 +1,25 @@
+name: "picoHSM Speed Dating"
+author: "ctf@ledger.fr"
+category: "Hardware / Pwn"
+description: |
+    Looks like the brand new picoHSM is online. We don't really know what this
+    product is... Time to have a look, and see how far we can go! But first,
+    have a look at the firmware binary we managed to steal.
+
+    There are 10 boards available on the network at `picohsm.donjon-ctf.io`, on
+    ports ranging from `8001` to `8010`. Try to pick one. All boards are exactly the
+    same. You may not be alone trying to play. If connection fails, the
+    equipment is probably already busy...
+
+    We also know the admin resets and reflashes the boards every 15 minutes.
+    
+    Finally, we captured a photo of this equipment... you'll probably
+    understand why this suffers poor performance...
+    
+value: 100
+type: standard
+flags:
+    - CTF{Ju5t_A_W4rmUP}
+files:
+    - firmware-mcu.elf
+    - photo.jpg
