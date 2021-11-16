@@ -1,0 +1,13 @@
+name: "Elliptic Relations"
+author: "ctf@ledger.fr"
+category: "Reverse"
+description: |
+    We found this binary, which seems to come from a well known hardware wallet.
+
+    We were told it contains a secret. Can you retrieve it?
+value: 300
+type: standard
+flags:
+    - CTF{r4nD0m1Z3d_sUD0ku_FTW}
+files:
+    - elliptic_relations.elf
